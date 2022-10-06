@@ -1,7 +1,15 @@
+import 'package:catalog/Pages/cart_page.dart';
+import 'package:catalog/Pages/home_page.dart';
+import 'package:catalog/Pages/login_page.dart';
+import 'package:catalog/core/store.dart';
+import 'package:catalog/utils/routes.dart';
+import 'package:catalog/widgets/themes.dart';
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 void main() {
-  runApp(MyApp());
+  // ignore: prefer_const_constructors
+  runApp(VxState(store: MyStore(), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -10,13 +18,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome"),
-          ),
-        ),
-      ),
+      // home: HomePage(),
+      themeMode: ThemeMode.dark,
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => LoginPage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.cartRoute: (context) => CartPage(),
+      },
     );
   }
 }

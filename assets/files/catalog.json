@@ -1,0 +1,45 @@
+{
+    "products":[
+        {
+        "id":1,
+        "name":"Iphoone 12 pro",
+        "desc":"12th generation",
+        "price":999,
+        "color":"#33505a",
+        "image":"https://mobilemall.pk/public_html/images/product/product_1631796086iphone-13-pro-max-gold-select.png"
+    },
+    {
+        "id":2,
+        "name":"Iphoone 13 pro",
+        "desc":"13th generation",
+        "price":1000,
+        "color":"#33505a",
+        "image":"https://mobilemall.pk/public_html/images/product/product_1631796086iphone-13-pro-max-gold-select.png"
+    },
+    {
+        "id":3,
+        "name":"Iphoone 14 pro",
+        "desc":"14th generation",
+        "price":1005,
+        "color":"#33505a",
+        "image":"https://mobilemall.pk/public_html/images/product/product_1631796086iphone-13-pro-max-gold-select.png"
+    },
+    {
+        "id":4,
+        "name":"Iphoone 15 pro",
+        "desc":"15th generation",
+        "price":1500,
+        "color":"#33505a",
+        "image":"https://mobilemall.pk/public_html/images/product/product_1631796086iphone-13-pro-max-gold-select.png"
+    },
+    {
+        "id":5,
+        "name":"Iphoone 16 pro",
+        "desc":"16th generation",
+        "price":1100,
+        "color":"#33505a",
+        "image":"https://mobilemall.pk/public_html/images/product/product_1631796086iphone-13-pro-max-gold-select.png"
+    }
+
+]
+}
